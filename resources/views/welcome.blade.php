@@ -10,9 +10,19 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold">
-        Hello world!
-    </h1>
+    <div class="w-full h-screen overflow-scroll">
+        <div class="fixed w-full bg-slate-500 p-2">
+            Gestion de parking
+        </div>
+        <div class="flex h-full pt-10">
+            <div class="flex w-1/5 ">
+                @include('sidebar')
+            </div>
+            <div class="flex w-4/5 bg-slate-300">
+                @yield('content')
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
