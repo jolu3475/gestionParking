@@ -16,14 +16,15 @@
     @endphp
 
     <div class="w-full h-screen overflow-scroll">
-        <div class="fixed w-full bg-slate-500 p-2">
+        <div
+            class="fixed w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-2 text-white">
             Gestion de parking
         </div>
         <div class="flex h-full pt-10">
-            <div class="flex w-1/6 ">
+            <div class="flex w-1/6 bg-gradient-to-r from-indigo-500 to-sky-500 text-white">
                 @include('sidebar')
             </div>
-            <div class="flex w-5/6 bg-slate-300">
+            <div class="flex w-5/6 ">
                 @yield('content')
             </div>
         </div>
