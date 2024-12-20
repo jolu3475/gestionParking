@@ -1,7 +1,8 @@
-@extends('welcome')
+@extends('testpage')
 
 @section('css')
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src={{ asset('SimpleDatatable/forbites/JS/simple-datatables@9.0.3') }}></script>
 @endsection
 
 @section('content')
@@ -188,11 +189,6 @@
 
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3"></script>
-
 
     <script>
         if (document.getElementById("export-table") && typeof simpleDatatables.DataTable !== 'undefined') {
