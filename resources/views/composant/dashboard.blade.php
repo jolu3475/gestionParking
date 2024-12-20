@@ -208,9 +208,10 @@
             data: {
                 labels: ['Disponible', 'Traitement', 'Total'],
                 datasets: [{
-                    label: '# of Votes',
+                    label: 'Graphique des voiture par état',
                     data: [12, 19, 3],
-                    borderWidth: 1
+                    borderWidth: 1,
+                    backgroundColor: ['#3490dc', '#f6993f', '#38c172']
                 }]
             },
             options: {
