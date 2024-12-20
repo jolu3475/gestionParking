@@ -9,12 +9,16 @@
     @vite('resources/css/app.css')
     <link href={{ asset('SimpleDatatable/forbites/CSS/flowbite.min.css') }} rel="stylesheet" />
     <script src={{ asset('SimpleDatatable/forbites/JS/flowbite.min.js') }}></script>
-    @yield('css')
+    {{-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3"></script> --}}
+
+    @yield('css')`
+
 </head>
 
 <body>
 
-    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+    <nav
+        class="fixed text-white top-0 z-50 w-full bg-gradient-to-r from-cyan-500 to-blue-500 border-b border-b-black dark:bg-gray-800 dark:border-gray-700">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-start rtl:justify-end">
@@ -36,18 +40,17 @@
                     </a>
                 </div>
             </div>
+        </div>
     </nav>
 
     <aside id="logo-sidebar"
-        class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
-        aria-label="Sidebar">
+        class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-cyan-500 border-r border-black sm:translate-x-0
+        aria-label=`Sidebar`">
         @include('sidebar')
     </aside>
 
     <div class="p-4 sm:ml-64">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-            @yield('content')
-        </div>
+        @yield('content')
     </div>
 
 </body>
