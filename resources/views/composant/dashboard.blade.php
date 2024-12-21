@@ -6,12 +6,12 @@
 @endsection
 
 @section('content')
-    <div class="p-4 border-2 border-gray-200 bg-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 shadow-lg">
+    <div class="p-4 border-dashed border-2 border-blue-500 bg-gray-200 rounded-lg dark:border-gray-700 mt-10 shadow-lg">
         <div>
             <canvas id="myChart"></canvas>
         </div>
     </div>
-    <div class="p-4 border-2 border-gray-200 bg-gray-200 shadow-lg border-dashed rounded-lg dark:border-gray-700 mt-14">
+    <div class="p-4 border-2 border-blue-500 bg-gray-200 shadow-lg border-dashed rounded-lg dark:border-gray-700 mt-14">
         <div class="p-4 w-full">
             <h1>Dashboard</h1>
             <p>Vous êtes connecté en tant qu'administrateur</p>
@@ -19,9 +19,9 @@
             <div class="pt-5 w-full">
 
                 <table id="export-table">
-                    <thead>
+                    <thead class="bg-blue-400">
                         <tr>
-                            <th>
+                            <th class="bg-blue-400">
                                 <span class="flex items-center">
                                     Name
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th data-type="date" data-format="YYYY/DD/MM">
+                            <th data-type="date" data-format="YYYY/DD/MM" class="bg-blue-400">
                                 <span class="flex items-center">
                                     Release Date
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"

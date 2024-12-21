@@ -1,4 +1,4 @@
-<div class="h-full px-3 pb-4 overflow-y-auto bg-cyan-500 dark:bg-gray-800">
+<div class="h-full px-3 pb-4 overflow-y-auto bg-gradient-to-b from-cyan-500 to-blue-500 dark:bg-gray-800">
     <ul class="space-y-2 font-medium">
         <li>
             <a href="#"
