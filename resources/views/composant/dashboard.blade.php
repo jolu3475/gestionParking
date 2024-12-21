@@ -6,12 +6,12 @@
 @endsection
 
 @section('content')
-    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+    <div class="p-4 border-2 border-gray-200 bg-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 shadow-lg">
         <div>
             <canvas id="myChart"></canvas>
         </div>
     </div>
-    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+    <div class="p-4 border-2 border-gray-200 bg-gray-200 shadow-lg border-dashed rounded-lg dark:border-gray-700 mt-14">
         <div class="p-4 w-full">
             <h1>Dashboard</h1>
             <p>Vous êtes connecté en tant qu'administrateur</p>
