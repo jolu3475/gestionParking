@@ -11,7 +11,7 @@
             <canvas id="myChart"></canvas>
         </div>
     </div>
-    <div class="p-4 border-2 border-blue-500 bg-gray-200 shadow-lg border-dashed rounded-lg dark:border-gray-700 mt-14">
+    <div class="p-4 border-2 border-blue-500 bg-gray-200 shadow-lg border-dashed rounded-lg dark:border-gray-700 mt-10">
         <div class="p-4 w-full">
             <h1>Dashboard</h1>
             <p>Vous êtes connecté en tant qu'administrateur</p>
@@ -342,7 +342,6 @@
             const $exportButton = document.getElementById("exportDropdownButton");
             const $exportDropdownEl = document.getElementById("exportDropdown");
             const dropdown = new Dropdown($exportDropdownEl, $exportButton);
-            console.log(dropdown)
 
             document.getElementById("export-csv").addEventListener("click", () => {
                 simpleDatatables.exportCSV(table, {
