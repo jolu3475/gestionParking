@@ -5,7 +5,7 @@
 <div class="h-full px-3 pb-4 overflow-y-auto bg-gradient-to-b from-cyan-500 to-blue-500 dark:bg-gray-800">
     <ul class="space-y-2 font-medium">
         <li>
-            <a href="#" @class([
+            <a href={{ route('home') }} @class([
                 'flex rounded-lg  items-center p-2 dark:text-white dark:hover:bg-gray-700 group',
                 'text-gray-900 hover:bg-gray-100' => !$routeName == 'home',
                 'bg-gray-100' => $routeName == 'home',
@@ -21,7 +21,7 @@
             </a>
         </li>
         <li>
-            <a href="#" @class([
+            <a href={{ route('vehicule') }} @class([
                 'flex rounded-lg  items-center p-2 dark:text-white dark:hover:bg-gray-700 group',
                 'text-gray-900 hover:bg-gray-100' => !Str::startsWith(
                     $routeName,

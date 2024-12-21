@@ -12,4 +12,9 @@ class HomeController extends Controller
     {
         return view('composant.dashboard');
     }
+
+    public function vehicule()
+    {
+        return view('composant.vehicule');
+    }
 }
