@@ -6,7 +6,8 @@
 @endsection
 
 @section('content')
-    <div class="p-4 border-dashed border-2 border-blue-500 bg-gray-200 rounded-lg dark:border-gray-700 mt-10 shadow-lg">
+    <div
+        class=" outline outline-offset-1 outline-blue-500 p-4 {{-- border-dashed border-2 border-blue-500 --}} bg-gray-200 rounded-lg dark:border-gray-700 mt-10 shadow-lg">
         <div>
             <canvas id="myChart"></canvas>
         </div>
@@ -211,7 +212,7 @@
                     label: 'Graphique des voiture par état',
                     data: [12, 19, 3],
                     borderWidth: 1,
-                    backgroundColor: ['#3490dc', '#f6993f', '#38c172']
+                    backgroundColor: ['#36f906', '#f5f906', ' #060df9']
                 }]
             },
             options: {
